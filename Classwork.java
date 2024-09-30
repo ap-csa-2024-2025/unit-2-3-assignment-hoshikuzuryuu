@@ -4,6 +4,8 @@ public class Classwork
   {
     System.out.println(firstLastN("dictionary", 3));
     System.out.println(delEnd("library",1));
+    System.out.println(compareLower("bahahahaha", "ziggs"));
+    System.out.println(lengthFirst("I think this should work."));
   }
 
   public static String firstLastN(String word, int n)
@@ -22,6 +24,20 @@ public class Classwork
     int indexLast = word.length() - n ;
 
     output = word.substring(0,indexLast);
+    return output;
+  }
+
+  public static int compareLower(String w1, String w2)
+  {
+    int output;
+    output = w1.compareTo(w2);
+    return output;
+  }
+
+  public static int lengthFirst(String s)
+  {
+    int output; 
+    output = (s.substring(0, (s.indexOf(" ")))).length();
     return output;
   }
 }
